@@ -1,2 +1,2 @@
 # Classification-Penguins
-[link to application](https://classification-penguins.herokuapp.com/)
+[Link to application](https://tarantuviez-5.herokuapp.com/)
