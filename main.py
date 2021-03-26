@@ -2,9 +2,16 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-from sklearn.ensemble import RandomForestClassifier
 
 st.set_page_config(page_title='Classification Penguings', page_icon="./f.png")
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.write("""
 # Penguin Prediction App
 This app predicts the **Palmer Penguin** species!
@@ -77,3 +84,11 @@ st.write(penguins_species[prediction])
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
+st.write("""
+---
+## App repository
+
+[Github](https://github.com/ftarantuviez/Classification-Penguins)
+""")
+# / This app repository
